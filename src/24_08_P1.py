@@ -24,7 +24,7 @@ for i in range(len(X)):
         m -= alpha * dm
         b -= alpha * db 
 
-        if abs(dm) < epsilon and abs(db) < epsilon:
+        if abs(dm) < epsilon and abs(db) < epsilon: # khi đạo hàm riêng của cả 2 bé hơn epsilon thì đạt hội tụ ∇J(m,b)≈0
             print(f'Điểm {i} hội tụ tại epoch thứ {epoch}')
             break
 print(f'\b Kết quả cuối cùng:')
